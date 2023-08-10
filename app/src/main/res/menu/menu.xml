@@ -1,0 +1,23 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/action_left"-->
+<!--        android:icon="@drawable/baseline_menu_24"-->
+<!--        android:title="Left"-->
+<!--        android:orderInCategory="1"-->
+<!--        app:showAsAction="always" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_center"-->
+<!--        android:title=""-->
+<!--        android:orderInCategory="2"-->
+<!--        android:actionLayout="@layout/menu_center_layout"-->
+<!--        app:showAsAction="always" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_right"-->
+<!--        android:icon="@drawable/baseline_checklist_24"-->
+<!--        android:title="Right"-->
+<!--        android:orderInCategory="3"-->
+<!--        app:showAsAction="always" />-->
+</menu>

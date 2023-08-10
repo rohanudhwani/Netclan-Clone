@@ -1,0 +1,50 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subToolbar"
+     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#184968">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/personalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Personal"
+            android:layout_gravity="center"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:alpha="0.8"/>
+
+        <TextView
+            android:id="@+id/businessBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Business"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:alpha="0.8"/>
+
+        <TextView
+            android:id="@+id/merchantBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Merchant"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:alpha="0.8"
+            android:layout_marginStart="50dp"/>
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

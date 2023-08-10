@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Custom_Slider_Style" parent="Widget.MaterialComponents.Slider">
+        <item name="materialThemeOverlay">@style/slider_overlay</item>
+    </style>
+
+    <style name="slider_overlay">
+        <item name="colorPrimary">@color/dblue</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="shapeAppearanceOverlay">@style/tooltipShOverlay</item>
+        <item name="backgroundTint">@color/dblue</item>
+    </style>
+
+    <style name="tooltipShOverlay">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/dblue</item>
+        <item name="colorPrimaryDark">#092539</item>
+    </style>
+</resources>

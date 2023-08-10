@@ -30,14 +30,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <FrameLayout
-        android:id="@+id/fragment_personal"
-        android:layout_width="412dp"
-        android:layout_height="620dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/fragmentContainer"
         app:layout_constraintEnd_toEndOf="@+id/fragmentContainer"
         app:layout_constraintStart_toStartOf="@+id/fragmentContainer"
-        app:layout_constraintTop_toBottomOf="@+id/subToolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/subToolbar"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp">
+
+                <com.google.android.material.search.SearchBar
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Search" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/baseline_manage_search_24" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_personal"
+            android:layout_width="412dp"
+            android:layout_height="620dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="128dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

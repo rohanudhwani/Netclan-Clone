@@ -52,14 +52,14 @@ public class MainActivity extends AppCompatActivity {
         businessButton = findViewById(R.id.businessBtn);
         merchantButton = findViewById(R.id.merchantBtn);
 
-//        openPersonalFragment();
-//        personalButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                showSectionButtons("personal");
-//                openPersonalFragment();
-//            }
-//        });
+        openPersonalFragment();
+        personalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showSectionButtons("personal");
+                openPersonalFragment();
+            }
+        });
 
         businessButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,20 +129,20 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-//    private void openPersonalFragment() {
-//        // Replace 'YourFragment' with the actual name of your Fragment class
-//        ItemFragment fragment = new ItemFragment();
-//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//
-//        // Set the custom animation for fragment transition
-//        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
-//                R.anim.slide_in_left, R.anim.slide_out_right);
-//
-//        // Replace the fragment container with the new fragment
-//        transaction.replace(R.id.fragment_personal, fragment)
-//                .addToBackStack(null) // Add this if you want to navigate back to the previous fragment
-//                .commit();
-//    }
+    private void openPersonalFragment() {
+        // Replace 'YourFragment' with the actual name of your Fragment class
+        PersonalItemFragment fragment = new PersonalItemFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        // Set the custom animation for fragment transition
+        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                R.anim.slide_in_left, R.anim.slide_out_right);
+
+        // Replace the fragment container with the new fragment
+        transaction.replace(R.id.fragment_personal, fragment)
+                .addToBackStack(null) // Add this if you want to navigate back to the previous fragment
+                .commit();
+    }
 
 
     public void loadFragment(Fragment fragment) {

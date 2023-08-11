@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.netclanexplorerclone.placeholder.PlaceholderContent.PlaceholderItem;
-import com.example.netclanexplorerclone.databinding.FragmentItemPersonalBinding;
+import com.example.netclanexplorerclone.databinding.FragmentBusinessItemBinding;
 
 import java.util.List;
 
@@ -16,26 +16,26 @@ import java.util.List;
  * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class MyPersonalItemRecyclerViewAdapter extends RecyclerView.Adapter<MyPersonalItemRecyclerViewAdapter.ViewHolder> {
+public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder> {
 
     private final List<PlaceholderItem> mValues;
 
-    public MyPersonalItemRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public MyItemRecyclerViewAdapter(List<PlaceholderItem> items) {
         mValues = items;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ViewHolder(FragmentItemPersonalBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new ViewHolder(FragmentBusinessItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
 
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText("Name: " + mValues.get(position).id);
-        holder.mContentView.setText("Hi community! We have great deals for you. Check us out!! " + mValues.get(position).content);
+        holder.mIdView.setText(mValues.get(position).id);
+        holder.mContentView.setText(mValues.get(position).content);
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MyPersonalItemRecyclerViewAdapter extends RecyclerView.Adapter<MyPe
         public final TextView mContentView;
         public PlaceholderItem mItem;
 
-        public ViewHolder(FragmentItemPersonalBinding binding) {
+        public ViewHolder(FragmentBusinessItemBinding binding) {
             super(binding.getRoot());
             mIdView = binding.itemNumber;
             mContentView = binding.content;

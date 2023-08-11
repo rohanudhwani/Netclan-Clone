@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showSectionButtons("business");
+                openBusinessFragment();
             }
         });
 
@@ -143,6 +144,36 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null) // Add this if you want to navigate back to the previous fragment
                 .commit();
     }
+
+    private void openBusinessFragment() {
+        // Replace 'YourFragment' with the actual name of your Fragment class
+        BusinessItemFragment fragment = new BusinessItemFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        // Set the custom animation for fragment transition
+        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+                R.anim.slide_in_left, R.anim.slide_out_right);
+
+        // Replace the fragment container with the new fragment
+        transaction.replace(R.id.fragment_personal, fragment)
+                .addToBackStack(null) // Add this if you want to navigate back to the previous fragment
+                .commit();
+    }
+
+//    private void openMerchantFragment() {
+//        // Replace 'YourFragment' with the actual name of your Fragment class
+//        MerchantItemFragment fragment = new MerchantItemFragment();
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//
+//        // Set the custom animation for fragment transition
+//        transaction.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left,
+//                R.anim.slide_in_left, R.anim.slide_out_right);
+//
+//        // Replace the fragment container with the new fragment
+//        transaction.replace(R.id.fragment_personal, fragment)
+//                .addToBackStack(null) // Add this if you want to navigate back to the previous fragment
+//                .commit();
+//    }
 
 
     public void loadFragment(Fragment fragment) {

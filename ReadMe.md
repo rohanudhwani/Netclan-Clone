@@ -10,25 +10,28 @@ The cloned screens were recreated using Android Studio and incorporated the late
 
 2. **Explore Screen:** The Explore screen showcases a curated collection of user-generated content. It offers a visually appealing interface to engage users and encourage them to discover new posts and media.
 
-## Installation Instructions
-1. Clone this repository to your local machine using `git clone https://github.com/your-username/netclan-explorer-clone.git`.
+## Installation Instructions for Source Code
+1. Clone this repository to your local machine using `git clone https://github.com/rohanudhwani/Netclan-Clone.git`.
 
 2. Open the project in Android Studio.
 
-3. Ensure that your device is set to **Light Mode** if it's currently in Dark Mode. This step is crucial to maintain the app's design consistency.
+3. Build and run the app on your emulator or physical device.
 
-4. Build and run the app on your emulator or physical device.
+## Installation Instructions for APK File
+1. Ensure that your device is set to **Light Mode** if it's currently in Dark Mode. This step is crucial to maintain the app's design consistency.
+
+2. Install and Run
 
 ## Dependencies
-- Android Studio: Version XYZ
-- Material Components for Android: Version ABC
-- Kotlin: Version DEF
+- Android Studio: Flamingo | 2022.2.1 Patch 2
+- Material Components for Android: Version 1.9.0
+- Java: Version "18.0.2" 2022-07-19
 
 ## Contribution
 Contributions to enhance the clone's accuracy, functionality, and user experience are welcome. Please submit a pull request if you have any improvements to offer.
 
 ## Credits
-This clone was created by [Your Name]. It is inspired by the Netclan Explorer app.
+This clone was created by Rohan Udhwani. It is inspired by the Netclan Explorer app.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is free to use.

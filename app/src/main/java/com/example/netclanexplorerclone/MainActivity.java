@@ -19,13 +19,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.netclanexplorerclone.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView refine;
     public static final int FRAGMENT_REQUEST_CODE = 1;
     private Toolbar toolbar, subToolbar;
     private TextView personalButton, businessButton, merchantButton;
-
+    ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +84,19 @@ public class MainActivity extends AppCompatActivity {
         // Initially, show buttons for the selected section
         showSectionButtons("personal"); // or "business" or "merchant"
 
+
+
+//        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+//            int itemId = item.getItemId();
+//            if (itemId == R.id.navigation_explore) {
+//            } else if (itemId == R.id.navigation_network) {
+//            } else if (itemId == R.id.navigation_chat) {
+//            } else if (itemId == R.id.navigation_contacts) {
+//            } else if (itemId == R.id.navigation_groups) {
+//            }
+//
+//            return true;
+//        });
 
 
 

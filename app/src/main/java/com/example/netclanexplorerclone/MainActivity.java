@@ -25,7 +25,7 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView refine;
+    View refine;
     public static final int FRAGMENT_REQUEST_CODE = 1;
     private Toolbar toolbar, subToolbar;
     private TextView personalButton, businessButton, merchantButton;

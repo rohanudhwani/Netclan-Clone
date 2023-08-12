@@ -153,6 +153,15 @@ public class RefineFragment extends Fragment {
             }
         });
 
+        Button saveBtn = rootView.findViewById(R.id.saveButton);
+        saveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getParentFragmentManager().popBackStack();
+
+            }
+        });
+
 
         return rootView;
     }

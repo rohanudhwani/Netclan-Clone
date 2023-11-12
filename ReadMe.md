@@ -6,9 +6,12 @@ This repository contains a clone of the Refine and Explore screens from the Netc
 The cloned screens were recreated using Android Studio and incorporated the latest Material UI components for a modern and intuitive user experience. Fragments were utilized to enhance the app's modularity and responsiveness.
 
 ## Screens
-1. **Refine Screen:** This screen allows users to set filters and preferences for their content feed. It offers a seamless browsing experience by tailoring the displayed content according to user preferences.
 
-2. **Explore Screen:** The Explore screen showcases a curated collection of user-generated content. It offers a visually appealing interface to engage users and encourage them to discover new posts and media.
+![Refine Screen](/Screenshots/refine.gif)
+<br/>1. **Refine Screen:** This screen allows users to set filters and preferences for their content feed. It offers a seamless browsing experience by tailoring the displayed content according to user preferences.
+<br/><br/><br/>
+![Explore Screen](/Screenshots/explore.gif)
+<br/>2. **Explore Screen:** The Explore screen showcases a curated collection of user-generated content. It offers a visually appealing interface to engage users and encourage them to discover new posts and media.
 
 ## Installation Instructions for Source Code
 1. Clone this repository to your local machine using `git clone https://github.com/rohanudhwani/Netclan-Clone.git`.

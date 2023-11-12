@@ -7,11 +7,13 @@ The cloned screens were recreated using Android Studio and incorporated the late
 
 ## Screens
 
-![Refine Screen](/Screenshots/refine.gif)
-<br/>1. **Refine Screen:** This screen allows users to set filters and preferences for their content feed. It offers a seamless browsing experience by tailoring the displayed content according to user preferences.
+<img src="/Screenshots/refine.gif" alt="Refine Screen" width="400px"/>
+1. **Refine Screen:** This screen allows users to set filters and preferences for their content feed. It offers a seamless browsing experience by tailoring the displayed content according to user preferences.
 <br/><br/><br/>
-![Explore Screen](/Screenshots/explore.gif)
-<br/>2. **Explore Screen:** The Explore screen showcases a curated collection of user-generated content. It offers a visually appealing interface to engage users and encourage them to discover new posts and media.
+
+<img src="/Screenshots/explore.gif" alt="Explore Screen" width="400px"/>
+2. **Explore Screen:** The Explore screen showcases a curated collection of user-generated content. It offers a visually appealing interface to engage users and encourage them to discover new posts and media.
+<br/><br/>
 
 ## Installation Instructions for Source Code
 1. Clone this repository to your local machine using `git clone https://github.com/rohanudhwani/Netclan-Clone.git`.
